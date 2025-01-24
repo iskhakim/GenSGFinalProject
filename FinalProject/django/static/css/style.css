@@ -1,0 +1,157 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #5a9;
+            color: white;
+            padding: 20px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 2em;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header .actions {
+            display: flex;
+            gap: 15px;
+        }
+        header .actions a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        header .actions img {
+            width: 24px;
+            height: 24px;
+        }
+        .hero {
+            background: url('https://raw.githubusercontent.com/iskhakim/GenSGFinalProject/refs/heads/main/petstore.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(255, 127, 80, 0.8);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            z-index: -1;
+            border-radius: 5px;
+        }
+        .about, .products, .collections, .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        .about p, .contact p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .products .product-grid, .collections .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .products .product, .collections .collection {
+            background: white;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .products .product img, .collections .collection img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .products .product h3, .collections .collection h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .collections .collection:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .login-form, .cart {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+        }
+        .login-form label, .cart label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-form input, .cart input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .login-form button, .cart button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5a9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form button:hover, .cart button:hover {
+            background-color: #488;
+        }
+ 
